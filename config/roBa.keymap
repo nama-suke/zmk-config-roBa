@@ -33,10 +33,10 @@
 
         SHORTCUT {
             bindings = <
-&kp LC(Q)  &kp LC(W)         &kp LA(F4)         &kp LC(R)        &kp LC(T)                                               &kp LC(W)          &kp LC(R)     &kp LC(T)     &kp LC(O)      &kp LC(P)
-&kp LC(A)  &kp KP_NUMBER_4   &kp KP_NUMBER_5    &kp KP_NUMBER_6  &kp LS(LC(T))  &trans                &kp LG(LC(LEFT))   &kp LC(PAGE_UP)    &kp LC(HOME)  &kp LA(UP)    &kp LC(END)    &trans
-&kp LC(Z)  &kp LC(X)         &kp LC(C)          &kp LC(V)        &kp LC(B)      &kp LS(LG(LEFT))      &kp LG(LC(RIGHT))  &kp LC(PAGE_DOWN)  &kp LA(LEFT)  &kp LA(DOWN)  &kp LA(RIGHT)  &trans
-&trans     &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans           &trans         &trans                &kp DELETE         &trans                                                        &trans
+&kp LC(Q)  &kp LC(W)         &kp LA(F4)         &kp LC(R)  &kp LC(T)                                               &kp LC(W)          &kp LC(R)     &kp LC(T)     &kp LC(O)      &kp LC(P)
+&kp LC(A)  &kp LC(S)         &kp LC(D)          &kp LC(F)  &kp LS(LC(T))  &trans                &kp LG(LC(LEFT))   &kp LC(PAGE_UP)    &kp LC(HOME)  &kp LA(UP)    &kp LC(END)    &trans
+&kp LC(Z)  &kp LC(X)         &kp LC(C)          &kp LC(V)  &kp LC(B)      &kp LS(LG(LEFT))      &kp LG(LC(RIGHT))  &kp LC(PAGE_DOWN)  &kp LA(LEFT)  &kp LA(DOWN)  &kp LA(RIGHT)  &trans
+&trans     &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans     &trans         &trans                &kp DELETE         &trans                                                        &trans
             >;
         };
 
