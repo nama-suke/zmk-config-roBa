@@ -15,10 +15,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R  &kp T                                                         &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F  &kp G        &kp LBKT                  &kp RBKT               &kp H        &kp J  &kp K      &kp L    &kp SEMI
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V  &kp B        &kp LEFT_PARENTHESIS      &kp RIGHT_PARENTHESIS  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT RS(SLASH)
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &none  &lt 2 SPACE  &none                     &lt 2 BACKSPACE        &lt 6 ENTER                             &mt RCTRL ESCAPE
+&kp Q             &kp W         &kp E         &kp R        &kp T                                                         &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F        &kp G        &kp LBKT                  &kp RBKT               &kp H        &kp J  &kp K      &kp L    &kp SEMI
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V        &kp B        &kp LEFT_PARENTHESIS      &kp RIGHT_PARENTHESIS  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT RS(SLASH)
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 LANG2  &lt 2 SPACE  &lt 3 LANG1               &lt 2 BACKSPACE        &lt 6 ENTER                             &mt RCTRL ESCAPE
             >;
         };
 
@@ -34,7 +34,7 @@
         SHORTCUT {
             bindings = <
 &kp LC(Q)  &kp LC(W)         &kp LA(F4)         &kp LC(R)        &kp LC(T)                                               &kp LC(W)          &kp LC(R)     &kp LC(T)     &kp LC(O)      &kp LC(P)
-&kp SLASH  &kp KP_NUMBER_4   &kp KP_NUMBER_5    &kp KP_NUMBER_6  &kp LS(LC(T))  &trans                &kp LG(LC(LEFT))   &kp LC(PAGE_UP)    &kp LC(HOME)  &kp LA(UP)    &kp LC(END)    &trans
+&kp LC(A)  &kp KP_NUMBER_4   &kp KP_NUMBER_5    &kp KP_NUMBER_6  &kp LS(LC(T))  &trans                &kp LG(LC(LEFT))   &kp LC(PAGE_UP)    &kp LC(HOME)  &kp LA(UP)    &kp LC(END)    &trans
 &kp LC(Z)  &kp LC(X)         &kp LC(C)          &kp LC(V)        &kp LC(B)      &kp LS(LG(LEFT))      &kp LG(LC(RIGHT))  &kp LC(PAGE_DOWN)  &kp LA(LEFT)  &kp LA(DOWN)  &kp LA(RIGHT)  &trans
 &trans     &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans           &trans         &trans                &kp DELETE         &trans                                                        &trans
             >;
@@ -53,19 +53,19 @@
 
         MOUSE {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                      &trans  &trans    &trans    &trans    &trans
-&trans        &trans        &trans        &trans        &trans        &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans        &trans        &trans        &trans        &trans        &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&bootloader   &trans        &trans        &trans        &trans        &trans      &trans  &trans                                &trans
+&trans  &trans  &trans    &trans    &trans                        &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &mkp MB2  &mkp MB1  &mo 5     &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &mo 5
+&trans  &trans  &trans    &trans    &mkp MB3  &trans      &trans  &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans    &trans    &trans    &trans      &trans  &trans                                &trans
             >;
         };
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                      &trans  &trans  &trans  &trans  &trans
+&trans        &trans        &trans        &trans        &trans        &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans        &trans        &trans        &trans        &trans        &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&bootloader   &trans        &trans        &trans        &trans        &trans      &trans  &trans                          &trans
             >;
         };
 
