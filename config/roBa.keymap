@@ -22,7 +22,7 @@
     behaviors {
         back_to_layer_0: back_to_layer_0 {
             compatible = "zmk,behavior-macro";
-            label = "TAP_AND_TO_LAYER_0";
+            label = "BACK_TO_LAYER_0";
             #binding-cells = <0>;
             bindings = <&trans>, <&to 0>;
         };
