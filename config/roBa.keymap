@@ -45,7 +45,7 @@
 &kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)   &kp LS(PRCNT)                      &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)   &kp LS(RPAR)
 &trans        &trans      &trans         &kp GRAVE      &kp SQT        &trans      &trans  &trans         &trans        &kp BSLH      &kp LS(UNDER)  &kp MINUS
 &trans        &trans      &trans         &kp LS(TILDE)  &kp LS(DQT)    &trans      &trans  &trans         &trans        &kp LS(PIPE)  &kp LS(PLUS)   &kp EQUAL
-&trans        &trans      &trans         &trans         &trans         &trans      &trans  &trans                                                    &kp PRINTSCREEN
+&mo 7         &trans      &trans         &trans         &trans         &trans      &trans  &trans                                                    &kp PRINTSCREEN
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -62,10 +62,10 @@
 
         SCROLL {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                      &trans  &trans  &trans  &trans  &trans
-&trans        &trans        &trans        &trans        &trans        &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans        &trans        &trans        &trans        &trans        &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&bootloader   &trans        &trans        &trans        &trans        &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
 
@@ -75,6 +75,15 @@
 &trans     &kp N4   &kp N5  &kp N6    &kp MINUS  &kp LS(COLON)      &kp LG(LC(LEFT))   &kp PG_UP             &kp HOME               &kp UP    &kp END        &trans
 &kp LSHFT  &kp N1   &kp N2  &kp N3    &kp PLUS   &kp FSLH           &kp LC(LG(RIGHT))  &kp PG_DN             &kp LEFT               &kp DOWN  &kp RIGHT      &kp RIGHT_SHIFT
 &kp LCTRL  &kp DOT  &kp N0  &kp LALT  &kp LGUI   &trans             &trans             &trans                                                                &kp LG(L)
+            >;
+        };
+
+        HW {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans        &trans        &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans        &trans        &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                  &bootloader
             >;
         };
     };
