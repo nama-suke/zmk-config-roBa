@@ -10,6 +10,15 @@
 / {
     combos { compatible = "zmk,combos"; };
 
+    behaviors {
+        back_to_layer_0: back_to_layer_0 {
+            compatible = "zmk,behavior-macro";
+            label = "TAP_AND_TO_LAYER_0";
+            #binding-cells = <0>;
+            bindings = <&trans>, <&to_layer 0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -51,10 +60,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans    &trans    &trans                        &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &mkp MB2  &mkp MB1  &mo 5     &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &mo 5
-&trans  &trans  &trans    &trans    &mkp MB3  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans    &trans    &trans    &trans      &trans  &trans                                &trans
+&back_to_layer0  &back_to_layer0  &back_to_layer0    &back_to_layer0    &back_to_layer0                        &back_to_layer0  &back_to_layer0    &back_to_layer0    &back_to_layer0    &back_to_layer0
+&back_to_layer0  &back_to_layer0  &mkp MB2  &mkp MB1  &mo 5     &back_to_layer0      &back_to_layer0  &back_to_layer0  &mkp MB1  &mkp MB3  &mkp MB2  &mo 5
+&back_to_layer0  &back_to_layer0  &back_to_layer0    &back_to_layer0    &mkp MB3  &back_to_layer0      &back_to_layer0  &back_to_layer0  &back_to_layer0    &back_to_layer0    &back_to_layer0    &back_to_layer0
+&back_to_layer0  &back_to_layer0  &back_to_layer0    &back_to_layer0    &back_to_layer0    &back_to_layer0      &back_to_layer0  &back_to_layer0                                &back_to_layer0
             >;
         };
 
