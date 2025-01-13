@@ -42,13 +42,11 @@
 
         SIGNATURE {
             bindings = <
-&kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)   &kp LS(PRCNT)                      &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)   &kp LS(RPAR)
-&trans        &trans      &trans         &kp GRAVE      &kp SQT        &trans      &trans  &trans         &trans        &kp BSLH      &kp LS(UNDER)  &kp MINUS
-&trans        &trans      &trans         &kp LS(TILDE)  &kp LS(DQT)    &trans      &trans  &trans         &trans        &kp LS(PIPE)  &kp LS(PLUS)   &kp EQUAL
-&mo 7         &trans      &trans         &trans         &trans         &trans      &trans  &trans                                                    &kp PRINTSCREEN
+&kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)   &kp LS(PRCNT)                             &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)   &kp LS(RPAR)
+&trans        &trans      &trans         &kp GRAVE      &kp SQT        &trans      &trans         &trans         &trans        &kp BSLH      &kp LS(UNDER)  &kp MINUS
+&trans        &trans      &trans         &kp LS(TILDE)  &kp LS(DQT)    &trans      &trans         &trans         &trans        &kp LS(PIPE)  &kp LS(PLUS)   &kp EQUAL
+&mo 7         &trans      &trans         &trans         &trans         &trans      &kp BACKSPACE  &trans                                                    &kp PRINTSCREEN
             >;
-
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
         MOUSE {
