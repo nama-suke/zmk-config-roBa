@@ -24,7 +24,7 @@
             compatible = "zmk,behavior-macro";
             label = "TAP_AND_TO_LAYER_0";
             #binding-cells = <0>;
-            bindings = <&trans>, <&to_layer 0>;
+            bindings = <&trans>, <&to 0>;
         };
     };
 
