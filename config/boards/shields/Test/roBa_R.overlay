@@ -9,13 +9,9 @@
         hold_tap_behavior: hold_tap_behavior {
             compatible = "zmk,behavior-hold-tap";
             label = "DEFAULT_HOLD_TAP";
-            tapping-term-ms = <125>;  // 全体のタップ判定を250msに設定
+            tapping-term-ms = <125>;
         };
     };
-};
-
-&hold_tap {
-    tapping-term-ms = <125>;
 };
 
 &kscan0 {
