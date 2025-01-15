@@ -87,19 +87,19 @@
 
         TENKEY {
             bindings = <
-&kp TAB    &kp N7   &kp N8  &kp N9    &kp STAR                                         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans    &kp RIGHT_ALT  &kp TAB
-&trans     &kp N4   &kp N5  &kp N6    &kp MINUS  &kp LS(COLON)      &kp LG(LC(LEFT))   &kp PG_UP             &kp HOME               &kp UP    &kp END        &kp SLASH
-&kp LSHFT  &kp N1   &kp N2  &kp N3    &kp PLUS   &kp FSLH           &kp LC(LG(RIGHT))  &kp PG_DN             &kp LEFT               &kp DOWN  &kp RIGHT      &kp RIGHT_SHIFT
-&kp LCTRL  &kp DOT  &kp N0  &kp LALT  &kp LGUI   &trans             &trans             &trans                                                                &kp LG(L)
+&kp TAB        &kp N7   &kp N8  &kp N9    &kp STAR                                         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans    &kp RIGHT_ALT  &kp TAB
+&kp LS(MINUS)  &kp N4   &kp N5  &kp N6    &kp MINUS  &kp LS(COLON)      &kp LG(LC(LEFT))   &kp PG_UP             &kp HOME               &kp UP    &kp END        &kp SLASH
+&kp LSHFT      &kp N1   &kp N2  &kp N3    &kp PLUS   &kp FSLH           &kp LC(LG(RIGHT))  &kp PG_DN             &kp LEFT               &kp DOWN  &kp RIGHT      &kp RIGHT_SHIFT
+&kp LCTRL      &kp DOT  &kp N0  &kp LALT  &kp LGUI   &trans             &trans             &trans                                                                &kp LG(L)
             >;
         };
 
         HW {
             bindings = <
-&trans       &trans  &trans  &trans  &trans                      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans       &trans  &trans  &trans  &trans  &trans      &trans  &trans        &trans        &trans        &trans        &trans
-&trans       &trans  &trans  &trans  &trans  &trans      &trans  &trans        &trans        &trans        &trans        &trans
-&bootloader  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                  &bootloader
+&bt BT_CLR_ALL  &trans  &trans  &trans  &bt BT_CLR                      &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4
+&trans          &trans  &trans  &trans  &trans      &trans      &trans  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4
+&bootloader     &trans  &trans  &trans  &trans      &trans      &trans  &trans         &trans         &trans         &trans         &trans
+&trans          &trans  &trans  &trans  &trans      &trans      &trans  &trans                                                      &bootloader
             >;
         };
     };
