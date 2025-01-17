@@ -69,10 +69,10 @@
 
         MOUSE {
             bindings = <
-&back_to_layer0  &back_to_layer0  &back_to_layer0  &back_to_layer0  &back_to_layer0                                        &back_to_layer0  &back_to_layer0  &back_to_layer0  &back_to_layer0  &back_to_layer0
-&back_to_layer0  &back_to_layer0  &mkp MB2         &mkp MB1         &mo 5            &back_to_layer0      &back_to_layer0  &back_to_layer0  &mkp MB1         &mkp MB3         &mkp MB2         &mo 5
-&back_to_layer0  &back_to_layer0  &back_to_layer0  &back_to_layer0  &mkp MB3         &back_to_layer0      &back_to_layer0  &back_to_layer0  &back_to_layer0  &back_to_layer0  &back_to_layer0  &back_to_layer0
-&back_to_layer0  &back_to_layer0  &back_to_layer0  &back_to_layer0  &back_to_layer0  &back_to_layer0      &back_to_layer0  &back_to_layer0                                                     &back_to_layer0
+&trans  &trans  &trans    &trans    &trans                        &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &mkp MB2  &mkp MB1  &mo 5     &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &mo 5
+&trans  &trans  &trans    &trans    &mkp MB3  &trans      &trans  &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans    &trans    &trans    &trans      &trans  &trans                                &trans
             >;
         };
 
