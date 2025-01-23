@@ -42,28 +42,28 @@
 
         ARROWS {
             bindings = <
-&kp N1     &kp N2  &kp N3  &kp N4  &kp N5                         &kp N6     &kp N7    &kp N8    &kp N9     &kp N0
-&trans     &kp F2  &kp F3  &kp F4  &kp F5   &kp F6       &trans   &kp PG_UP  &kp HOME  &kp UP    &kp END    &kp MINUS
-&kp LSHFT  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11      &trans   &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp RSHFT
-&kp LCTRL  &trans  &trans  &trans  &trans   &trans       &kp DEL  &trans                                    &kp RCTRL
+&kp N1     &kp N2  &kp N3  &kp N4  &kp N5                        &kp N6     &kp N7    &kp N8    &kp N9     &kp N0
+&trans     &kp F2  &kp F3  &kp F4  &kp F5   &trans      &trans   &kp PG_UP  &kp HOME  &kp UP    &kp END    &kp MINUS
+&kp LSHFT  &kp F7  &kp F8  &kp F9  &kp F10  &trans      &trans   &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp RSHFT
+&kp LCTRL  &trans  &trans  &trans  &trans   &trans      &kp DEL  &trans                                    &kp RCTRL
             >;
         };
 
         SHORTCUT {
             bindings = <
-&kp LC(Q)  &kp LC(W)         &kp LA(F4)         &kp LC(R)  &kp LC(T)                                               &kp LC(W)          &kp LC(R)     &kp LC(T)     &kp LC(O)      &kp LC(P)
-&kp LC(A)  &kp LC(S)         &kp LC(D)          &kp LC(F)  &kp LS(LC(T))  &trans                &kp LG(LC(LEFT))   &kp LC(PAGE_UP)    &kp LC(HOME)  &kp LA(UP)    &kp LC(END)    &trans
-&kp LC(Z)  &kp LC(X)         &kp LC(C)          &kp LC(V)  &kp LC(B)      &kp LS(LG(LEFT))      &kp LG(LC(RIGHT))  &kp LC(PAGE_DOWN)  &kp LA(LEFT)  &kp LA(DOWN)  &kp LA(RIGHT)  &trans
-&trans     &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans     &trans         &trans                &kp DELETE         &trans                                                        &mo 7
+&kp LC(Q)  &kp LC(W)         &kp LA(F4)         &kp LC(R)  &kp LC(T)                                               &kp LC(W)          &kp LC(R)     &kp LC(T)     &kp LC(LS(T))  &kp LC(P)
+&kp LC(A)  &kp LC(S)         &kp LC(D)          &kp LC(F)  &kp LS(LC(T))  &kp LA(LC(F5))        &kp LG(LC(LEFT))   &kp LC(PAGE_UP)    &kp LC(HOME)  &kp LA(UP)    &kp LC(END)    &kp RC(RG(RIGHT))
+&kp LC(Z)  &kp LC(X)         &kp LC(C)          &kp LC(V)  &kp LC(B)      &kp LS(LG(LEFT))      &kp LG(LC(RIGHT))  &kp LC(PAGE_DOWN)  &kp LA(LEFT)  &kp LA(DOWN)  &kp LA(RIGHT)  &kp RC(RG(LEFT_ARROW))
+&trans     &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans     &trans         &trans                &kp DELETE         &trans                                                        &trans
             >;
         };
 
         SIGNATURE {
             bindings = <
-&kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)   &kp LS(PRCNT)                             &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)   &kp LS(RPAR)
-&trans        &trans      &trans         &kp GRAVE      &kp SQT        &trans      &trans         &trans         &trans        &kp BSLH      &kp LS(UNDER)  &kp MINUS
-&trans        &trans      &trans         &kp LS(TILDE)  &kp LS(DQT)    &trans      &trans         &trans         &trans        &kp LS(PIPE)  &kp LS(PLUS)   &kp EQUAL
-&mo 7         &trans      &trans         &trans         &trans         &trans      &kp BACKSPACE  &trans                                                    &kp PRINTSCREEN
+&kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)   &kp LS(PRCNT)                             &kp LS(CARET)         &kp LS(AMPS)           &kp LS(STAR)  &kp LS(LPAR)   &kp LS(RPAR)
+&trans        &trans      &trans         &kp GRAVE      &kp SQT        &trans      &trans         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BSLH      &kp LS(UNDER)  &kp MINUS
+&trans        &trans      &trans         &kp LS(TILDE)  &kp LS(DQT)    &trans      &trans         &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp LS(PIPE)  &kp LS(PLUS)   &kp EQUAL
+&mo 7         &trans      &trans         &trans         &trans         &trans      &kp BACKSPACE  &trans                                                                    &kp PRINTSCREEN
             >;
         };
 
@@ -72,7 +72,7 @@
 &trans  &trans  &trans    &trans    &trans                        &trans  &trans    &trans    &trans    &trans
 &trans  &trans  &mkp MB2  &mkp MB1  &mo 5     &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &mo 5
 &trans  &trans  &trans    &trans    &mkp MB3  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans    &trans    &trans    &trans      &trans  &trans                                &trans
+&to 0   &trans  &trans    &to 0     &trans    &to 0       &trans  &trans                                &trans
             >;
         };
 
@@ -88,8 +88,8 @@
         TENKEY {
             bindings = <
 &kp TAB        &kp N7   &kp N8  &kp N9    &kp STAR                                         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans    &kp RIGHT_ALT  &kp TAB
-&kp LS(MINUS)  &kp N4   &kp N5  &kp N6    &kp MINUS  &kp LS(COLON)      &kp LG(LC(LEFT))   &kp PG_UP             &kp HOME               &kp UP    &kp END        &kp SLASH
-&kp LSHFT      &kp N1   &kp N2  &kp N3    &kp PLUS   &kp FSLH           &kp LC(LG(RIGHT))  &kp PG_DN             &kp LEFT               &kp DOWN  &kp RIGHT      &kp RIGHT_SHIFT
+&kp LS(MINUS)  &kp N4   &kp N5  &kp N6    &kp MINUS  &kp LS(COLON)      &kp LG(LC(LEFT))   &kp PG_UP             &kp HOME               &kp UP    &kp END        &kp EQUAL
+&kp LSHFT      &kp N1   &kp N2  &kp N3    &kp PLUS   &kp FSLH           &kp LC(LG(RIGHT))  &kp PG_DN             &kp LEFT               &kp DOWN  &kp RIGHT      &mt RIGHT_SHIFT SLASH
 &kp LCTRL      &kp DOT  &kp N0  &kp LALT  &kp LGUI   &trans             &trans             &trans                                                                &kp LG(L)
             >;
         };
