@@ -87,10 +87,10 @@
 
         TENKEY {
             bindings = <
-&kp TAB        &kp N7   &kp N8  &kp N9    &kp STAR                                         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans    &kp RIGHT_ALT  &kp TAB
-&kp LS(MINUS)  &kp N4   &kp N5  &kp N6    &kp MINUS  &kp LS(COLON)      &kp LG(LC(LEFT))   &kp PG_UP             &kp HOME               &kp UP    &kp END        &kp EQUAL
-&kp LSHFT      &kp N1   &kp N2  &kp N3    &kp PLUS   &kp FSLH           &kp LC(LG(RIGHT))  &kp PG_DN             &kp LEFT               &kp DOWN  &kp RIGHT      &mt RIGHT_SHIFT SLASH
-&kp LCTRL      &kp DOT  &kp N0  &kp LALT  &kp LGUI   &trans             &trans             &trans                                                                &kp LG(L)
+&kp TAB              &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_ASTERISK                                           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans    &kp RIGHT_ALT  &kp TAB
+&kp LS(KP_NUMBER_0)  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS     &kp LS(KP_EQUAL)      &kp LG(LC(LEFT))   &kp PG_UP             &kp HOME               &kp UP    &kp END        &kp RS(SEMICOLON)
+&kp LSHFT            &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_PLUS      &kp KP_DIVIDE         &kp LC(LG(RIGHT))  &kp PG_DN             &kp LEFT               &kp DOWN  &kp RIGHT      &mt RIGHT_SHIFT KP_SLASH
+&kp LCTRL            &kp DOT          &kp KP_NUMBER_0  &kp LALT         &kp LGUI         &trans                &trans             &trans                                                                &kp LG(L)
             >;
         };
 
