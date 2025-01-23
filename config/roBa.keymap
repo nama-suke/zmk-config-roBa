@@ -51,10 +51,10 @@
 
         SHORTCUT {
             bindings = <
-&kp LC(Q)  &kp LC(W)         &kp LA(F4)         &kp LC(R)  &kp LC(T)                                               &kp LC(W)          &kp LC(R)     &kp LC(T)     &kp LC(LS(T))  &kp LC(P)
-&kp LC(A)  &kp LC(S)         &kp LC(D)          &kp LC(F)  &kp LS(LC(T))  &kp LA(LC(F5))        &kp LG(LC(LEFT))   &kp LC(PAGE_UP)    &kp LC(HOME)  &kp LA(UP)    &kp LC(END)    &kp RC(RG(LEFT))
-&kp LC(Z)  &kp LC(X)         &kp LC(C)          &kp LC(V)  &kp LC(B)      &kp LS(LG(LEFT))      &kp LG(LC(RIGHT))  &kp LC(PAGE_DOWN)  &kp LA(LEFT)  &kp LA(DOWN)  &kp LA(RIGHT)  &kp RC(RG(RIGHT))
-&trans     &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans     &trans         &trans                &kp DELETE         &trans                                                        &trans
+&kp LC(Q)  &kp LC(W)         &kp LA(F4)         &kp LC(R)  &kp LC(T)                                                  &kp LC(W)          &kp LC(R)     &kp LC(T)     &kp LC(LS(T))  &kp LC(P)
+&kp LC(A)  &kp LC(S)         &kp LC(D)          &kp LC(F)  &kp LS(LC(T))  &kp LA(LC(F5))        &trans                &kp LC(PAGE_UP)    &kp LC(HOME)  &kp LA(UP)    &kp LC(END)    &kp LG(LC(LEFT))
+&kp LC(Z)  &kp LC(X)         &kp LC(C)          &kp LC(V)  &kp LC(B)      &kp LS(LG(LEFT))      &kp LS(LG(UP_ARROW))  &kp LC(PAGE_DOWN)  &kp LA(LEFT)  &kp LA(DOWN)  &kp LA(RIGHT)  &kp LG(LC(RIGHT))
+&trans     &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans     &trans         &trans                &kp DELETE            &trans                                                        &trans
             >;
         };
 
@@ -69,10 +69,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans    &trans    &trans                        &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &mkp MB2  &mkp MB1  &mo 5     &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &mo 5
-&trans  &trans  &trans    &trans    &mkp MB3  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&to 0   &trans  &trans    &to 0     &trans    &to 0       &trans  &trans                                &trans
+&trans  &trans  &trans    &trans           &trans                                 &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &mkp MB2  &mkp MB1         &mo 5     &trans               &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &mo 5
+&trans  &trans  &trans    &trans           &mkp MB3  &trans               &trans  &trans  &trans    &trans    &trans    &trans
+&to 0   &trans  &trans    &back_to_layer0  &trans    &back_to_layer0      &trans  &trans                                &trans
             >;
         };
 
@@ -90,7 +90,7 @@
 &kp TAB              &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_ASTERISK                                           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans    &kp RIGHT_ALT  &kp TAB
 &kp LS(KP_NUMBER_0)  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS     &kp LS(KP_EQUAL)      &kp LG(LC(LEFT))   &kp PG_UP             &kp HOME               &kp UP    &kp END        &kp RS(SEMICOLON)
 &kp LSHFT            &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_PLUS      &kp KP_DIVIDE         &kp LC(LG(RIGHT))  &kp PG_DN             &kp LEFT               &kp DOWN  &kp RIGHT      &mt RIGHT_SHIFT KP_SLASH
-&kp LCTRL            &kp DOT          &kp KP_NUMBER_0  &kp LALT         &kp LGUI         &trans                &kp DELETE         &trans                                                                &kp LG(L)
+&kp LCTRL            &kp KP_DOT       &kp KP_NUMBER_0  &kp LALT         &kp LGUI         &trans                &kp DELETE         &trans                                                                &kp LG(L)
             >;
         };
 
