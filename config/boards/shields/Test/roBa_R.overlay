@@ -60,8 +60,3 @@
         scroll-layers = <5>;
     };
 };
-
-&mt_tp {
-    binding = <&mt>;
-    flavor = "tap-preferred";
-};
