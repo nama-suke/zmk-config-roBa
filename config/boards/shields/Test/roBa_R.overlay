@@ -61,4 +61,6 @@
     };
 };
 
-
+&mt_tp {
+    flavor = "tap-preferred";
+};
