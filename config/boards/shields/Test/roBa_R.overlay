@@ -20,7 +20,6 @@
         device = <&trackball>;
 
         min_movement = <5>;
-        timeout = <200ms>;
         exit_conditions = "non_mouse_button_press";
         continue_conditions = "mouse_button_press";
 
