@@ -26,6 +26,12 @@
             #binding-cells = <0>;
             bindings = <&trans &to 0>;
         };
+        mt_tap: behavior-hold-tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_TAP_PREF";
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+        };
     };
 
     keymap {
@@ -35,11 +41,10 @@
             bindings = <
 &kp Q             &kp W         &kp E         &kp R        &kp T                                                         &kp Y        &kp U  &kp I      &kp O    &kp P
 &kp A             &kp S         &kp D         &kp F        &kp G        &kp LBKT                  &kp RBKT               &kp H        &kp J  &kp K      &kp L    &kp SEMI
-&mt {flavor="tap-preferred"; bindings=<&kp LEFT_SHIFT>,<&kp Z>;};  &kp X         &kp C         &kp V        &kp B        &kp LEFT_PARENTHESIS      &kp RIGHT_PARENTHESIS  &kp N        &kp M  &kp COMMA  &kp DOT  &mt{flavor="tap-preferred"; bindings=<&kp RIGHT_SHIFT>, <&kp SLASH>;}
+&mt-tap LEFT_SHIFT Z  &kp X         &kp C         &kp V        &kp B        &kp LEFT_PARENTHESIS      &kp RIGHT_PARENTHESIS  &kp N        &kp M  &kp COMMA  &kp DOT  &mt-tap RIGHT_SHIFT SLASH
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 LANG2  &lt 2 SPACE  &lt 3 LANG1               &lt 2 BACKSPACE        &lt 6 ENTER                             &mt RCTRL ESCAPE
             >;
         };
-
         ARROWS {
             bindings = <
 &kp N1     &kp N2  &kp N3  &kp N4  &kp N5                        &kp N6     &kp N7    &kp N8    &kp N9     &kp N0
