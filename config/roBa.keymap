@@ -31,6 +31,7 @@
             label = "MT_TAP_PREF";
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
+            bindings = <&kp>, <&kp>;
         };
     };
 
